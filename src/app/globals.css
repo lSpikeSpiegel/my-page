@@ -1,2 +1,17 @@
 @import "@unocss/reset/tailwind.css";
 @unocss all;
+
+:root {
+	--color-primary: #3b82f6;
+	--color-primary-light: #6399f8;
+	--color-warning: #e6a23c;
+	--color-warning-light: #ffd266;
+	--color-success: #28a745;
+	--color-success-light: #69d279;
+	--color-info: #17a2b8;
+	--color-info-light: #66c2ff;
+	--color-danger: #dc3545;
+	--color-danger-light: #ff667f;
+	--color-light: #f8f9fa;
+	--color-dark: #212529;
+}

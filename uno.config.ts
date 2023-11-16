@@ -6,5 +6,12 @@ export default defineConfig({
 		presetUno(),
 		presetAttributify()
 		// ...
+	],
+	shortcuts: [
+		[
+			/^btn-(.*)$/,
+			([, c]) =>
+				`bg-[var(--color-${c})] text-[var(--color-light)] rounded-8px hover:bg-[var(--color-${c}-light)]`
+		]
 	]
 });
