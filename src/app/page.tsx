@@ -1,13 +1,10 @@
+import Link from "next/link";
 import { Button } from "@chakra-ui/react";
-import { useTranslation } from "@/i18n";
-const isClient = typeof window === "undefined";
+import { useTranslation } from "@/i18n/index";
 
-export default async function Home() {
-	const { t } = await useTranslation("cn", "translation");
-
+export default function Home() {
 	return (
 		<div className="w-screen h-screen flex box-border p-20px">
-			{t("title")}
 			<div className="flex-1 flex flex-col gap-40px p-80px">
 				<h1 className="text-60px font-bold">Hello.</h1>
 				<h3 className="text-40px font-bold">My name is Evan You.</h3>
@@ -29,7 +26,9 @@ export default async function Home() {
 				</p>
 			</div>
 			<div className="flex-1 flex-shrink-0 flex justify-center items-center">
-				<Button className="w-200px h-48px border-2px btn-primary">View More</Button>
+				<Link href="/dashboard">
+					<Button className="w-200px h-48px border-2px btn-primary">View More</Button>
+				</Link>
 			</div>
 		</div>
 	);
