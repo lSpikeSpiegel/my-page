@@ -2,10 +2,11 @@
 html,
 body,
 #app {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 /* 解决 h1 标签在 webkit 内核浏览器中文字大小失效问题 */

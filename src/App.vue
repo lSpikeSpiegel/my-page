@@ -9,7 +9,10 @@ onBeforeMount(() => {
 </script>
 
 <template>
-	<router-view></router-view>
+	<div class="w-screen h-screen overflow-hidden box-border">
+		<router-view></router-view>
+		<div className="fixed bottom-0 w-full text-center">蜀ICP备2023030071号</div>
+	</div>
 </template>
 
 <style lang="scss"></style>
