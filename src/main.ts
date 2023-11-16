@@ -11,6 +11,8 @@ import router from "@/router/index";
 // pinia
 import { createPinia } from "pinia";
 
+import "virtual:uno.css";
+
 // Vuetify
 import "vuetify/styles";
 import { createVuetify } from "vuetify";

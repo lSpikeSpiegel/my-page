@@ -9,7 +9,7 @@ import viteCompression from "vite-plugin-compression";
 import vueSetupExtend from "vite-plugin-vue-setup-extend";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
-
+import UnoCSS from "unocss/vite";
 /**
  * 创建 vite 插件
  * @param viteEnv
@@ -18,6 +18,7 @@ export const createVitePlugins = (viteEnv: ViteEnv): (PluginOption | PluginOptio
 	const { VITE_GLOB_APP_TITLE, VITE_REPORT } = viteEnv;
 	return [
 		vue(),
+		UnoCSS(),
 		// vue 可以使用 jsx/tsx 语法
 		vueJsx(),
 		// esLint 报错信息显示在浏览器界面上

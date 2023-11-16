@@ -9,10 +9,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-	<div>
-		111
-		<v-btn>1111</v-btn>
-	</div>
+	<router-view></router-view>
 </template>
 
 <style lang="scss"></style>
