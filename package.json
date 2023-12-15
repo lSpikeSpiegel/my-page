@@ -17,6 +17,7 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@duskmoon/vue3-typed-js": "^0.0.4",
 		"@icon-park/vue-next": "^1.4.2",
 		"@vueuse/core": "^10.6.1",
 		"amfe-flexible": "^2.2.1",
